@@ -6,7 +6,7 @@ import movementAnimation from '../assets/lottie/movement.json';
 import {useEffect, useRef, useState} from 'react';
 
 const Layout = () => {
-  const [menuToggle, setMenuToggle] = useState(false);
+  const [menuToggle,] = useState(false);
 
 
   const homeRef = useRef<LottieRefCurrentProps>(null);
@@ -68,9 +68,6 @@ const Layout = () => {
     hamburgerRef.current.play();
   }, [menuToggle]);
 
-  useEffect(() => {
-    setMenuToggle(false);
-  }, [location]);
   return (
     <div className="m-auto h-full w-11/12">
       <nav className="absolute right-0 flex flex-col-reverse items-end justify-end lg:relative lg:block lg:flex-row">
